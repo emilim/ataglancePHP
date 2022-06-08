@@ -1,0 +1,112 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-end;
+}
+
+#send,
+#remove {
+    width: 70px;
+    height: 25px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+#verticalSplit,
+#horizontalSplit {
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+flex-element {
+    border-radius: 10px;
+}
+
+.show {
+    z-index: 1000;
+    position: absolute;
+    background-color: #cdcdcd77;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 2px;
+    display: block;
+    margin: 0;
+    list-style-type: none;
+    list-style: none;
+    border-radius: 10px;
+}
+
+#boxInfo {
+    border-radius: 10px;
+    background-color: rgb(240, 248, 255);
+    border: 0px;
+}
+
+button {
+    border-radius: 10px;
+    border: 1px solid rgb(179, 179, 179);
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    border: 10px solid rgb(229, 229, 229);
+    background-color: rgb(229, 229, 229);
+}
+
+flex {
+    display: flex;
+    overflow: hidden;
+}
+
+/* flex-item > flex {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} */
+
+flex.h {
+    flex-direction: row;
+}
+
+flex.v {
+    flex-direction: column;
+}
+
+flex-item {
+    /* display: flex; */
+    /* position: relative; */
+    /* overflow: hidden; */
+    overflow: auto;
+}
+
+flex>flex-resizer {
+    flex: 0 0 10px;
+    /* background: white; */
+    background-color: rgb(229, 229, 229);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+flex.h>flex-resizer {
+    cursor: ew-resize;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='30'><path d='M2 0 v30 M5 0 v30 M8 0 v30' fill='none' stroke='black'/></svg>");
+}
+
+flex.v>flex-resizer {
+    cursor: ns-resize;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='10'><path d='M0 2 h30 M0 5 h30 M0 8 h30' fill='none' stroke='black'/></svg>");
+}
