@@ -39,6 +39,7 @@ if ($_POST) {
             if (password_verify($password, $sql['password'])) {
                 session_start();
                 $_SESSION['username'] = $username;
+                $_SESSION['email'] = $email;
                 echo 'You have successfully logged-in';
                 header('location: ../app/account.php');
             } else {

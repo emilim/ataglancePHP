@@ -11,12 +11,12 @@ if (!empty($userData)) {
     $credential = !empty($userData->credential) ? $userData->credential : '';
 
     // Check whether the user data already exist in the database
-    $query = "SELECT * FROM users WHERE clientId = '" . $clientId . "'";
+    $query = "SELECT * FROM users WHERE clientId='$clientId'";
     $result = $conn->query($query);
 
     if ($result->num_rows > 0) {
         // Update user data if already exists
-        $query = "UPDATE users SET clientId = '" . $clientId . "', credential = '" . $credential . "', WHERE clientId = '" . $clientId . "'";
+        $query = "UPDATE users SET clientId='$clientId', credential='$credential' WHERE clientId='$clientId'";
         $update = $conn->query($query);
     } else {
         // Insert user data

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
 </head>
 <?php
 require '../backend/header.php';
@@ -25,7 +24,7 @@ if (isset($_SESSION['username'])) {
 
 <body>
     <ul>
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="account.php">Home</a></li>
         <li class="nav-item" style="float:right"><a class="waves-effect waves-light btn" href="../app/register.php">Sign up</a></li>
 
     </ul>
@@ -49,5 +48,8 @@ if (isset($_SESSION['username'])) {
         </div>
     </div>
 </body>
+<script>
+
+</script>
 
 </html>
