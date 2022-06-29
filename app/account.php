@@ -23,7 +23,6 @@ require '../backend/header.php';
     <link rel="stylesheet" href="../css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <link href="http://svgicons.sparkk.fr/svgicons.css" rel="stylesheet">
-    <script src="../javascript/navbar.js"></script>
 </head>
 
 <body>
